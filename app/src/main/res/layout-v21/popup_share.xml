@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_share_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/partilhar"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="60dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FF424242">
+
+                    <ImageButton
+                        android:id="@+id/mess"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ic_messages_icon"
+                        android:contentDescription="@string/to_do" />
+
+                    <ImageView
+                        android:id="@+id/mess_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="42dp"
+                        android:contentDescription="@string/to_do"
+                        android:src="@drawable/ic_baseline_check_circle_24"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="42dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="60dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/cardview_dark_background">
+
+                    <ImageButton
+                        android:id="@+id/whats"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ic_whatsapp_icon"
+                        android:contentDescription="@string/to_do" />
+
+                    <ImageView
+                        android:id="@+id/whats_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="42dp"
+                        android:contentDescription="@string/to_do"
+                        android:src="@drawable/ic_baseline_check_circle_24"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="42dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="60dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/cardview_dark_background">
+
+                    <ImageButton
+                        android:id="@+id/twitter"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ic_twiter_icon"
+                        android:contentDescription="@string/to_do" />
+
+                    <ImageView
+                        android:id="@+id/twitter_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="42dp"
+                        android:contentDescription="@string/to_do"
+                        android:src="@drawable/ic_baseline_check_circle_24"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="42dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="60dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/insta"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="321dp"
+                        android:layout_marginBottom="77dp"
+                        android:background="@drawable/ic_instagram_icon"
+                        android:contentDescription="@string/to_do"
+                        android:layout_marginRight="321dp" />
+
+                    <ImageView
+                        android:id="@+id/insta_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="42dp"
+                        android:contentDescription="@string/to_do"
+                        android:src="@drawable/ic_baseline_check_circle_24"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="42dp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/cancelar"
+                    app:backgroundTint="#CC0E0E" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/partilhar"
+                    app:backgroundTint="#0B1675" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
